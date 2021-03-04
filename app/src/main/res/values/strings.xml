@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DistanceTrackerApp</string>
+    <string name="continue_text">Lanjut</string>
+    <string name="description_text">
+        Selamat datang di Distance Tracker kami membutuhkan permission lokasi dari kamu.
+        jika tidak kami tidak bisa memberikan layananan penuh. jika kamu setuju klik tombol di bawah ini</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="location_permission_image">Location Permission Image</string>
+    <string name="_3">3</string>
+    <string name="tap_on_my_location">Tap on My Location</string>
+    <string name="start">Mulai</string>
+    <string name="stop">Berhenti</string>
+    <string name="reset">Reset</string>
+    <string name="go">GO</string>
+    <string name="distance">Jarak</string>
+    <string name="_0_00km">0.00Km</string>
+    <string name="time">Waktu</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="share">Share</string>
+    <string name="result">%1$s km</string>
+    <string name="share_result">Saya Melakukan perjalanan sejauh %s km dalam %s!</string>
+</resources>
