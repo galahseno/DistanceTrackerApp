@@ -62,6 +62,7 @@ class PermissionFragment : Fragment(), EasyPermissions.PermissionCallbacks {
         val action = PermissionFragmentDirections.actionPermissionFragmentToMapsFragment()
         findNavController().navigate(action)
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
