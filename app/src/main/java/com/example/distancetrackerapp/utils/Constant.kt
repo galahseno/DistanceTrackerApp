@@ -1,7 +1,7 @@
 package com.example.distancetrackerapp.utils
 
 object Constant {
-
+    const val MAPS_FRAGMENT_URI = "distancetracker://maps_fragment"
     const val KM = "km"
     const val INTENT_TYPE = "text/plain"
 

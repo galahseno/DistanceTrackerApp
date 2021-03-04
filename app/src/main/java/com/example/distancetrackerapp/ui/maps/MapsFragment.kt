@@ -92,6 +92,7 @@ class MapsFragment : Fragment(), OnMapReadyCallback, EasyPermissions.PermissionC
         }
         fusedLocationProviderClient =
             LocationServices.getFusedLocationProviderClient(requireContext())
+        observeLocationList()
     }
 
     @SuppressLint("MissingPermission", "PotentialBehaviorOverride")
@@ -109,7 +110,6 @@ class MapsFragment : Fragment(), OnMapReadyCallback, EasyPermissions.PermissionC
             isZoomGesturesEnabled = false
         }
 
-        observeLocationList()
         map.setOnMyLocationButtonClickListener {
             binding?.tapMylocationText?.animateGone()
             binding?.startButton?.showAnimate()

@@ -1,10 +1,12 @@
 package com.example.distancetrackerapp.ui
 
-import androidx.appcompat.app.AppCompatActivity
+import android.net.Uri
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import com.example.distancetrackerapp.R
+import com.example.distancetrackerapp.utils.Constant.MAPS_FRAGMENT_URI
 import com.example.distancetrackerapp.utils.Permission.hasLocationPermission
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -20,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         navController = findNavController(R.id.nav_host_fragment)
 
         if (hasLocationPermission(this)) {
-            navController.navigate(R.id.action_permissionFragment_to_mapsFragment)
+            val uri = Uri.parse(MAPS_FRAGMENT_URI)
+            navController.navigate(uri)
         }
     }
 }
